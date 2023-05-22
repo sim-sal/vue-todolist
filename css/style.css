@@ -4,3 +4,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* regole body */
+body{
+    background-color: rgb(190, 190, 190);
+}
+
+/* regole container generale */
+.container{
+    width: 40%;
+    margin: auto;
+}
+
+/* regole sezione input */
+#mybutton{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#mybutton:hover{
+    background-color: rgb(156, 156, 156);
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 2px black;
+}
+
+#task-input{
+    margin: 50px;
+    text-align: center;
+}
+
+#task-input > input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#task-output{
+    background-color: rgb(146, 146, 146);
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.task{
+    list-style-type: none;
+}
+
+.task > i{
+    float: right;
+}
+
+.task > i:hover{
+    cursor: pointer;
+    color: red;
+}

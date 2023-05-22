@@ -8,11 +8,35 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- title -->
     <title>To Do List</title>
 </head>
 <body>
     
+    <!-- container agganciato a createApp() -->
+    <div id="app" class="container">
+
+        <!-- div contenente input e botton per l'inserimento delle tasks -->
+        <div id="task-input">
+            <input type="text" placeholder="Inserisci nuova task">
+            <button id="mybutton">Aggiungi</button>
+        </div>
+
+        <!-- div contenente le tasks inserite -->
+        <div id="task-output">
+            
+            <ul>
+                <li class="task">
+                    <span><strong>Testo del task</strong></span>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
 
     <!-- vue js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
