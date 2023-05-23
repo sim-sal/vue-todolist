@@ -21,17 +21,17 @@
 
         <!-- div contenente input e botton per l'inserimento delle tasks -->
         <div id="task-input">
-            <input type="text" placeholder="Inserisci nuova task">
-            <button id="mybutton">Aggiungi</button>
+            <input type="text" placeholder="Inserisci nuova task" v-model="newTask"/>
+            <button id="mybutton" @click="addTask">Aggiungi</button>
         </div>
 
         <!-- div contenente le tasks inserite -->
         <div id="task-output">
             
             <ul>
-                <li class="task">
-                    <span><strong>Testo del task</strong></span>
-                    <i class="fa-solid fa-circle-xmark"></i>
+                <li class="task" v-for="(task, ind) in tasks">
+                    <span><strong>{{task.text}}</strong></span>
+                    <i class="fa-solid fa-circle-xmark" @click="removeTask"></i>
                 </li>
             </ul>
             

@@ -7,7 +7,7 @@
 
 /* regole body */
 body{
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(145, 145, 145);
 }
 
 /* regole container generale */
@@ -24,7 +24,7 @@ body{
 }
 
 #mybutton:hover{
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(109, 109, 109);
     cursor: pointer;
     color: white;
     box-shadow: 2px 2px black;
@@ -42,7 +42,7 @@ body{
 }
 
 #task-output{
-    background-color: rgb(146, 146, 146);
+    background-color: rgb(240, 240, 240);
     font-size: 30px;
     border-radius: 10px;
     padding: 10px;
